@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<manifest>
+    <remote fetch="https://git.yoctoproject.org" name="poky"/>
+    <remote fetch="https://git.openembedded.org" name="openembedded"/>
+    <remote fetch="https://github.com/spikynavin" name="github"/>
+    <remote fetch="https://github.com/agherzan" name="rpi"/>
+    <remote fetch="https://github.com/L4B-Software" name="docker"/>
+    <remote fetch="https://github.com/uptane" name="updater"/>
+    <remote fetch="https://github.com/kraj" name="clang"/>
+    <remote fetch="https://github.com/meta-rust" name="rust"/>
+    <!--<remote fetch="https://codereview.qt-project.org/yocto" name="qt6"/> -->
+
+    <default remote="poky" sync-j="8"/>
+</manifest>
