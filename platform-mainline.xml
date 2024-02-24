@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<manifest>
+
+    <include name="remote-config.xml"/>
+
+    <!-- Poky layers -->
+    <project name="poky" path="sources/poky" remote="poky" revision="kirkstone"/>
+    <project name="meta-virtualization" path="sources/meta-virtualization" remote="poky" revision="kirkstone"/>
+    <project name="meta-gplv2" path="sources/meta-gplv2" remote="poky" revision="kirkstone"/>
+    <project name="meta-java" path="sources/meta-java" remote="poky" revision="kirkstone"/>
+
+    <!-- Open-embedded layers -->
+    <project name="meta-openembedded" path="sources/meta-openembedded" remote="openembedded" revision="kirkstone"/>
+
+    <!-- Board bsp layers -->
+    <project name="meta-raspberrypi" path="sources/meta-raspberrypi" remote="rpi" revision="kirkstone"/>
+
+    <!-- Opensource components -->
+    <project name="meta-docker" path="sources/meta-docker" remote="docker" revision="master"/>
+    <project name="meta-updater" path="sources/meta-updater" remote="updater" revision="kirkstone"/>
+    <project name="meta-clang" path="sources/meta-clang" remote="clang" revision="kirkstone"/>
+    <project name="meta-rust" path="sources/meta-rust" remote="rust" revision="master"/>
+    <!--<project name="meta-qt6" path="sources/meta-qt6" remote="qt6" revision="6.3"/>-->
+
+    <!-- User layers -->
+    <project name="meta-elinux" path="sources/meta-elinux" remote="github" revision="kirkstone">
+        <linkfile src="conf/setup-embedded-linux" dest="setup-embedded-linux"/>
+        <linkfile src="scripts/build.sh" dest="build.sh"/>
+    </project>
+
+</manifest>

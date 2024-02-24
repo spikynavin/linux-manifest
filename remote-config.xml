@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<manifest>
+    <remote fetch="https://git.yoctoproject.org" name="poky"/>
+    <remote fetch="https://git.openembedded.org" name="openembedded"/>
+    <remote fetch="https://github.com/agherzan" name="rpi"/>
+    <remote fetch="https://github.com/rauc" name="ota"/>
+
+    <default remote="poky" sync-j="8"/>
+</manifest>
