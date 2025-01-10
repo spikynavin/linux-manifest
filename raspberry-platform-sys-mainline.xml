@@ -12,19 +12,10 @@
     <!-- Board bsp layers -->
     <project name="meta-raspberrypi" path="sources/meta-raspberrypi" remote="rpi" revision="scarthgap"/>
 
-    <!-- OTA bsp layers -->
-    <project name="meta-rauc" path="sources/meta-rauc" remote="ota" revision="scarthgap"/>
-    <project name="meta-rauc-community" path="sources/meta-rauc-community" remote="ota" revision="scarthgap"/>
-    <project name="meta-lts-mixins" path="sources/meta-lts-mixins" remote="moto-timo" revision="scarthgap/u-boot"/>
-    <project name="meta-qbee" path="sources/meta-qbee" remote="qbee" revision="master"/>
-    <project name="meta-selinux" path="sources/meta-selinux" remote="poky" revision="scarthgap"/>
-    <project name="meta-virtualization" path="sources/meta-virtualization" remote="poky" revision="scarthgap"/>
-    <project name="meta-security" path="sources/meta-security" remote="poky" revision="scarthgap"/>
-    <project name="meta-clang" path="sources/meta-clang" remote="clang" revision="scarthgap"/>
-
     <project name="meta-elinux" path="sources/meta-elinux" remote="github" revision="main">
         <linkfile src="conf/setup-embedded-linux" dest="setup-embedded-linux"/>
         <linkfile src="scripts/build.sh" dest="build.sh"/>
     </project>
 
+    <project name="meta-lts-mixins" path="sources/meta-lts-mixins" remote="poky" revision="scarthgap/u-boot"/>
 </manifest>

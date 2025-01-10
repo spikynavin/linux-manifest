@@ -15,6 +15,14 @@ It will install all the host packages.
 
 Once the environment setup done. we need to do repo init by using the below cmd.
 
+#### update locales
+```bash
+sudo apt update
+sudo apt install -y locales
+sudo locale-gen en_US.UTF-8
+sudo update-locale LANG=en_US.UTF-8
+```
+
 #### Install repo tool
 ```bash
 mkdir -p ~/bin

@@ -3,11 +3,7 @@
     <remote fetch="https://git.yoctoproject.org" name="poky"/>
     <remote fetch="https://git.openembedded.org" name="openembedded"/>
     <remote fetch="https://github.com/agherzan" name="rpi"/>
-    <remote fetch="https://github.com/rauc" name="ota"/>
     <remote fetch="https://github.com/spikynavin" name="github"/>
-    <remote fetch="https://github.com/moto-timo" name="moto-timo"/>
-    <remote fetch="https://github.com/qbee-io" name="qbee"/>
-    <remote fetch="https://github.com/kraj" name="clang"/>
 
     <default remote="poky" sync-j="8"/>
 </manifest>
